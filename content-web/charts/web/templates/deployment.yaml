@@ -47,7 +47,7 @@ spec:
           readinessProbe:
             httpGet:
               path: /
-              port: http
+              port: http1
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
